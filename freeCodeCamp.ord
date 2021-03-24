@@ -1,0 +1,638 @@
+Console.log()  //print
+// , /* hfbshdbv*/         // commenting
+
+var number = 1;
+var myNmae = “Akhil”
+nyNmae = 8  (can be changed)
+
+let ourName = “kajshfahf”
+const pi = 3.14
+…………………………….
+var a;
+var b = 7;
+console.log(a)
+console.log(b)
+a = b;
+console.log(a)
+
+
+
+
+CONSOLE
+›
+undefined
+›
+7
+›
+7
+………………………………..
+Case sensitive
+Var akhilBrunoChokka;
+Var selesAnandChokka;
+…………………………………………………
+Increment
+Var a = 10;
+A++; // meaning a = a+1
+a--; // a = a – 1
+……………………………………
+Reminder - % (usually used to define even or odd)
+
+Var reaminder;
+Remainder = 11 % 3;
+Console.log(remainder)
+……………………………………
+A = a + 10  -----  a+= 10
+B = b – 12 ------ b-= 12
+C = c * 5 ---------  c*= 5
+D  = d / 2 -------   d/= 2
+…………………………………
+\n – new line
+\t – tab
+………………………………
+var name = "AKhil Bruno";
+var sent = "My name is " + name + " I am sexy af";
+console.log(sent)
+
+CONSOLE
+›
+My name is AKhil Bruno I am sexy af
+………………………………………………………………………..
+Length of the variable -----   .length;
+var firstNameLength = 0;
+var firstName = "Akhil";
+
+firstNameLength = firstName.length;
+
+console.log(firstNameLength)
+
+output : 5
+………………………………………..
+Bracket notation ---- get the position of the variable from 0,1,2,3,..
+var letter = 'Akhil';
+console.log(letter[0])
+Output : A
+…………………………………..
+Last letter of a string(same technique for last to second or third)
+var firstLetter = '0';
+var letter = 'Akhil';
+console.log(letter[letter.length -1])
+Output: l
+……………………………………
+Functions
+function wordBlanks(myNoun, myAdj, myVerb, myAdv) {
+    var result = '';
+    result += "The " + myAdj + " " + myNoun + " " + myVerb + " to the store"   
+    return result;
+}
+console.log(wordBlanks("dog","big","ran","quickly"))
+Output:
+The big dog ran to the store.
+…………………………………………………………………..
+Arrays :  [“John”, 54 ];
+Var myArray = [“Me14b126”, “Bruno”, 25];
+Var ourArray = [[“the universe’, 42], [“Me14b126”, “Bruno”, 25], [“Jagged array”, 98]];
+var myArray = ["Akhil ",25];
+console.log(myArray[0])
+var myArray[0] = “Bruno”
+console.log(myArray[0])
+
+Output: AKhil
+	Bruno
+……………………………………………………………………………………
+var myArray = ["Akhil Bruno",25];
+console.log(myArray[0][0])
+Output: A
+…………………………………………………………..
+Push is an append function, which adds iteams in the last.
+var myArray = ["Akhil Bruno",25];
+myArray.push("Happy Hogan", 144)
+console.log(myArray)
+Output:
+“Akhil Bruno”, 25 , “Happy Hogan”, 144
+To add two array you use array1.concat(array2);
+…………………………………………………………………………………..
+Pop is a remove function, which removes the last element from an array.
+var myArray = [1,2,3,4,5,6,7,8,9,10];
+var removedArray = myArray.pop();
+console.log(myArray)
+console.log(removedArray)
+Output:
+1,2,3,4,5,6,7,8,9
+10
+…………………………………………………………………………….
+Shift function removes the first element from an array
+var myArray = [1,2,3,4,5,6,7,8,9,10];
+var removedArray = myArray.shift();
+console.log(myArray)
+console.log(removedArray)
+Output:
+2,3,4,5,6,7,8,9,10
+1
+……………………………………
+Unshift adds an element to the beginning of an array
+var myArray = [1,2,3];
+myArray.unshift(0);
+console.log(myArray)
+Output:
+0,1,2,3
+……………………………………………………………..
+
+Functions
+function addFunction (a,b) {
+    console.log(a+b);
+}
+addFunction(10,5)
+
+function subFunction(a,b) {
+    console.log(a - b);
+}
+subFunction(10,5)
+
+Output:
+15
+5
+…………………………………………………………………………….
+function minusSeven(num) {
+    return num - 7;
+}
+console.log(minusSeven(10))
+function timesFive(num){
+    return num*5;
+}
+console.log(timesFive(10))
+Output:
+3
+50
+…………………………………………………………….
+var changed = 0;
+function change(num) {
+    return (num + 5)/3;
+}
+changed = change(10);
+console.log(changed);
+Output:
+5
+…………………………………..
+Prob: Add a number in the ending and remove the first num in an array
+function Next (arr,item) {
+    arr.push(item);
+    return arr.shift();
+}
+var array = [1,2,3,4,5];
+
+console.log(Next(array,6))
+console.log(array)
+Output:
+1
+[2,3,4,5,6]
+…………………………………………
+Boolean types
+In a Boolean function you can only return true or false
+………………………………………………
+Comparision 
+function testEqual(num) {
+    if (num == 10) {
+        return "number is 10";
+    }
+    return "number is not 10";
+}
+console.log(testEqual(10));
+Output:
+Number is equal.
+==   // equality operator
+!=   // not equal operator
+=== // strict equal operator
+!== // strict unequality
+‘>’// greater than 
+‘<’ //less than
+‘<=’ //less than or equal to
+‘>=’ //greate than or equal to
+‘&&’ // and operator
+‘||’ // or operator
+……………………………………………………………………………
+And operator
+function testLogicalAnd(val){
+    if (val<= 50 && val >= 25) {
+        return "Yes";
+    }
+    return "No"
+}
+console.log(testLogicalAnd(27))
+Output:
+Yes
+……………………………………………………………………..
+Or operator
+function testLogicalOr(val){
+    if (val> 50 || val < 25) {
+        return "Value is outside";
+    }
+    return "Value is inside"
+}
+console.log(testLogicalOr(27))
+Output:
+Value is inside
+………………………………………………………………………………………………
+If-Else syntax
+function ifElseSyntax () {
+    if () {
+     return ;   
+    }
+    else {
+     return ;   
+    }
+    return ;
+}
+Else if statements
+function ifElseSyntax () {
+    if () {
+     return ;   
+    }
+    else if () {
+     return ;   
+    }
+    Else if (){
+    }
+    Else {
+    }
+    return ;
+}
+………………………………………………………….
+Golf results problem
+var names = ["Hole in one","Eagle","Birdie","Par","Bogey","Double bogey"];
+function golfScore(par, strokes) {
+    if(strokes == 1) {
+     return names[0];   
+    }
+    else if (strokes <= par -2){
+     return names[1];   
+    }
+    else if (strokes == par - 1){
+     return names[2];   
+    }
+    else if (strokes == par){
+     return names[3];   
+    }
+    else if (strokes == par + 1){
+     return names[4];;   
+    }
+    else if (strokes == par + 2){
+     return names[5];   
+    }
+}
+
+console.log(golfScore(5,4))
+Output:
+Bridie
+………………………………………………………………………………………………………………………………….
+
+
+Switch. Instead of chained if else, we can use switch statement
+function switchCase(val) {
+    var answer = "";
+    switch (val) {
+        case 1:
+        answer = 'alpha';
+        break;
+        
+        case 2:
+        answer = 'beta';
+        break;
+        
+        case 3:
+        answer = 'gamma';
+        break;
+        
+        case 4:
+        answer = 'delta';
+        break;
+        
+        case 5:
+        answer = 'sigma';
+        break;  
+
+	default:
+      	  answer = 'No'; 
+      	  break; 
+ 
+    }
+    return answer
+}
+
+console.log(switchCase(3))
+Output:
+Gamma
+……………………………………………………………..
+function withOutBreak(val) {
+    var answer = "";
+    switch (val) {
+        case 1:
+        case 2:
+        case 3:
+        answer = 'weak';
+         case 4:
+case 5:
+case 6:
+answer = ‘medium’;
+        case 7:
+	case 8:
+case 9:
+answer = ‘high’;
+
+        default:
+        answer = 'No'; 
+        break; 
+    }
+    return answer
+}
+
+console.log(withOutBreak (1))
+console.log(withOutBreak (5))
+console.log(withOutBreak (7))
+
+Output:
+Weak
+Medium
+High
+…………………………………………………………………………
+>,< is used for Boolean functions while returning
+function isLess (a,b) {
+   return a < b;
+}
+console.log(isLess(10,24));
+Output:
+True.
+………………………
+Just for non complications
+function nonNegitive (a,b) {
+    if(a<0 || b<0){
+        return undefined;
+    }
+return Math.pow(a,b)
+}
+console.log(nonNegitive(2,2));
+Output:
+4
+……………………………..
+Objects ---  propriety : value, used var and {}
+Object name . prorerity = value
+Bracket notation for objects is used to search for value if you have propriety and property if you have value, the bracket notation is used for properties with spaces.
+var ourDog = {
+    "name" : "Camper",
+    "legs" : 4,
+    "tails" : 1,
+    "friends" : ["everything!"]
+};
+var dogName = ourDog.name;
+var dogLegs = ourDog.[‘legs’];
+var something = ourDog[‘1’];
+console.log(dogName);
+console.log(dogLegs);
+console.log(something);
+Output:
+Camper
+4
+………………………………
+var ourDog = {
+    "name" : "Camper",
+    "legs" : 4,
+    "tails" : 1,
+    "friends" : ["everything!"]
+};
+
+ourDog.name = "Happy Camper";
+console.log(ourDog.name);
+Output:
+Happy Camper.
+……………………………………………….
+Adding new key value pair to object
+var ourDog = {
+    "name" : "Camper",
+    "legs" : 4,
+    "tails" : 1,
+    "friends" : ["everything!"]
+};
+
+ourDog['bark'] = "Woof!";
+console.log(ourDog.bark);
+Output:
+Woof!
+………………………………………..
+If you have to delete a key value pair from an object use:
+Delete ourDog.tails;
+……………………………………………………
+hasOwnProperty is used to check if you have 
+var ourDog = {
+    "name" : "Camper",
+    "legs" : 4,
+    "tails" : 1,
+    "friends" : ["everything!"]
+};
+
+function checkObj(checkProp){
+    if (ourDog.hasOwnProperty(checkProp)){
+        return ourDog[checkProp];
+    }else {
+        return "Not found";
+    }
+}
+console.log(checkObj("name"));
+Output: Camper	
+…………………………………………………………………………..
+var myStorage = {
+    "car" : {
+        "inside" : {
+            "glove box" : "maps" , "passenger seat" : "crumbs"
+        }, "outside" : {"truck" : "jack"}
+    }
+}
+var gloveBoxContents = myStorage.car.inside["glove box"]
+console.log(gloveBoxContents);
+Output : “Maps”
+………………………………………………….
+var myPlants = [
+    {
+        type : "flowers",
+        list : ["rose" , "tulip" , "doremon"]
+    },
+    {
+        type : "trees",
+        list : [
+            "fir", "pine", "birch"
+        ]
+    }
+]
+
+var secondTree = myPlants[1].list[1];
+console.log(secondTree)
+Output: pine
+……….
+While loop
+var array = [];
+var i = 0;
+
+while (i<5) {
+    array.push(i);
+    i++
+}
+console.log(array)
+Output: [0,1,2,3]
+…………………………………………………….
+For loop
+var array = [];
+for (var i = 0; i < 5; i++){
+    array.push(i);
+}
+console.log(array)
+Output: [0,1,2,3,4]
+……………………………………………………..
+Odd Numbers
+var array = [];
+for (var i = 1; i < 16; i+=2){
+    array.push(i);
+}
+console.log(array)
+[1,3,5,7,9,11,13,15]
+………………………………..
+Nested for loops
+Multiply every element in the array
+function multiplyAll(arr) {
+    var product = 1;
+    for (var i = 0; i<arr.length; i++){
+        for (var j =0; j<arr[i].length; j++){
+            product*= arr[i][j]
+        }
+    }  
+    return product;
+}
+var myArray = [[1,2],[3,4,5],[7,8,9]];
+
+console.log(multiplyAll(myArray));
+……………………………………………………
+var profileLookUp = [
+    {
+        "name" : "Chokka" ,
+        "age" : 23,
+        "sex" : "M",
+        "height" : 170, 
+        "deo" : "Yadley"
+    },
+    {
+        "name" : "Anand",
+        "age" : 21,
+        "sex" : "M",
+        "height" : 171,
+        "deo" : "Gentleman"
+    },
+    {
+        "name" : "Akhil",
+        "age" : 22,
+        "sex" : "M",
+        "height" : 172,
+        "deo" : "Wildstone"
+    },
+    {
+        "name" : "Bruno",
+        "age" : 37,
+        "sex" : "M",
+        "height" : 174,
+        "deo" : "Matt Black"
+    }
+   
+]
+
+function findProfile (name, prop) {
+    for (var i = 0; i < profileLookUp.length; i++){
+        if (profileLookUp[i].name === name){
+            return profileLookUp[i][prop]
+        }
+    }
+}
+
+console.log(findProfile("Akhil", "deo"))
+…………………………………………
+You can generate a random decimal number from Math.random ()
+Math.floor rounds to nearest whole number.
+…………………………………………………………..
+Number between upper and lower limits
+function randomWhole(lower,upper){
+    var k = Math.floor(Math.random() * upper);
+    if (lower< k && k <upper){
+        return k
+    }
+    else {
+        return randomWhole(lower,upper)
+    }
+    
+    
+}
+console.log(randomWhole(50,100));
+……………………………………………….
+Function parseInt(“56”) will convert to interger.
+parseInt(str,2) // convert the str into number which is of base 2.
+………………………………………………..
+Ternarry operator(used instead of if else statement) -----  condition ? iftrue : iffalse
+function posOrNeg (num) {
+                    return num > 0 ? "Positive" : num < 0 ? "Negitive" : "zero"
+}
+console.log(posOrNeg(10))
+Output: positive
+…………………………………………………………………………….
+Putting--- “use strict”; -------- in the code helps better with code mistakes
+……………………………….
+Var vs let vs const
+Declaring a variable with var in a function, the value of the variable is same outside the function and can be accessed outside the function.
+Declaring a variable with let, you cannot access the value of the variable outside the function.
+You cannot reassign a variable once you declare a variable with const. You declare with all caps ex: const PIE = 3.14; but you can change items in const.  
+Ex const s = [1,2,3];
+S[0]= 4
+S[1]= 5
+S[2]= 6
+Then s becomes [4,5,6];  (changing const items is called mutation)
+If you don’t ever want to change your const value, you put Object.freeze() function, put your const variable inside the brackets.
+…………………………………………………………………….
+Anonymous function
+Const magic = () => new Date ();
+       Variable = (func) (arrows) (return)
+………………………………………………………………………………………….
+const increment = (function () {
+    return function increment (number, value = 1) {
+        return number + value;
+    };
+})();
+console.log(increment(5,2));
+console.log(increment(5));
+Output:
+7
+6
+……………………………………………………………..
+Rest operator (…nameOfArg) ---  By putting three dots and name of the array, you can pass how many arguments you wanted to pass to return the same function.
+const sum = (function () {
+    return function sum(...args) {
+        return args.reduce((a,b) => a+b,0)
+    };
+})();
+console.log(sum(1,2,3,4));
+Output: 10
+………………………………………………………………..
+Spread Operator (…) The spread operator is a useful and quick syntax for adding items to arrays, combining arrays or objects, and spreading an array out into a function’s arguments.
+
+const arr1 = ["Jan","Feb","Mar","Apr","May","June"];
+let arr2;
+(function (){
+    arr2 = [...arr1];
+    arr1[0] = "potato";
+})();
+console.log(arr2)
+Output :
+["Jan","Feb","Mar","Apr","May","June"]; // If not used spread operator the ourput is Potato for arr2{0}
+………………………………………………………………………………………………….
+
+
+
+
+
+
+
+
+
+
